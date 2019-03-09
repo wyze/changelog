@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`works on a repo with 0 tags: changelog.md 1`] = `
+"## Change Log
+
+### [v1.0.0](https://github.com/wyze/a-fixture/releases/tag/v1.0.0) (2017-05-05)
+
+* A bug fix PR ([@wyze](https://github.com/wyze) in [#1](https://github.com/wyze/a-fixture/pull/1))
+* Initial Commit ([@wyze](https://github.com/wyze) in [65578dd](https://github.com/wyze/a-fixture/commit/65578dd))
+
+"
+`;
+
+exports[`works on a repo with 0 tags: readme.md 1`] = `
+"# a-fixture
+
+## Change Log
+
+> [Full Change Log](changelog.md)
+
+### [v1.0.0](https://github.com/wyze/a-fixture/releases/tag/v1.0.0) (2017-05-05)
+
+* A bug fix PR ([@wyze](https://github.com/wyze) in [#1](https://github.com/wyze/a-fixture/pull/1))
+* Initial Commit ([@wyze](https://github.com/wyze) in [65578dd](https://github.com/wyze/a-fixture/commit/65578dd))
+
+## License
+
+MIT © [Neil Kistner](//neilkistner.com)
+
+"
+`;
+
+exports[`works on a repo with 1 tag: changelog.md 1`] = `
+"## Change Log
+
+### [v1.1.0](https://github.com/wyze/a-fixture/releases/tag/v1.1.0) (2017-05-05)
+
+* Another fix ([@wyze](https://github.com/wyze) in [#2](https://github.com/wyze/a-fixture/pull/2))
+
+### [v1.0.0](https://github.com/wyze/a-fixture/releases/tag/v1.0.0) (2017-05-05)
+
+* A bug fix PR ([@wyze](https://github.com/wyze) in [#1](https://github.com/wyze/a-fixture/pull/1))
+* Initial Commit ([@wyze](https://github.com/wyze) in [65578dd](https://github.com/wyze/a-fixture/commit/65578dd))
+
+"
+`;
+
+exports[`works on a repo with 1 tag: readme.md 1`] = `
+"# a-fixture
+
+## Change Log
+
+> [Full Change Log](changelog.md)
+
+### [v1.1.0](https://github.com/wyze/a-fixture/releases/tag/v1.1.0) (2017-05-05)
+
+* Another fix ([@wyze](https://github.com/wyze) in [#2](https://github.com/wyze/a-fixture/pull/2))
+
+## License
+
+MIT © [Neil Kistner](//neilkistner.com)
+
+"
+`;
+
+exports[`works on a repo with old write-changelog format: changelog.md 1`] = `
+"## Change Log
+
+### [v1.1.0](https://github.com/wyze/a-fixture/releases/tag/v1.1.0) (2017-05-05)
+
+* Another fix ([@wyze](https://github.com/wyze) in [#10](https://github.com/wyze/a-fixture/pull/10))
+
+### [v1.0.0](https://github.com/wyze/a-fixture/releases/tag/v1.0.0) (2017-05-05)
+
+* [[\`c0489425d5\`](https://github.com/wyze/a-fixture/commit/c0489425d5)] - Initial Commit (Neil Kistner)
+
+"
+`;
+
+exports[`works on a repo with old write-changelog format: readme.md 1`] = `
+"# a-fixture
+
+## Change Log
+
+> [Full Change Log](changelog.md)
+
+### [v1.1.0](https://github.com/wyze/a-fixture/releases/tag/v1.1.0) (2017-05-05)
+
+* Another fix ([@wyze](https://github.com/wyze) in [#10](https://github.com/wyze/a-fixture/pull/10))
+
+## License
+
+MIT © [Neil Kistner](//neilkistner.com)
+
+"
+`;
+
+exports[`works when email is not present in github: changelog.md 1`] = `
+"## Change Log
+
+### [v1.1.0](https://github.com/wyze/a-fixture/releases/tag/v1.1.0) (2017-05-05)
+
+* Another fix (Neil Kistner in [#2](https://github.com/wyze/a-fixture/pull/2))
+
+### [v1.0.0](https://github.com/wyze/a-fixture/releases/tag/v1.0.0) (2017-05-05)
+
+* A bug fix PR ([@wyze](https://github.com/wyze) in [#1](https://github.com/wyze/a-fixture/pull/1))
+* Initial Commit ([@wyze](https://github.com/wyze) in [65578dd](https://github.com/wyze/a-fixture/commit/65578dd))
+
+"
+`;
+
+exports[`works when email is not present in github: readme.md 1`] = `
+"# a-fixture
+
+## Change Log
+
+> [Full Change Log](changelog.md)
+
+### [v1.1.0](https://github.com/wyze/a-fixture/releases/tag/v1.1.0) (2017-05-05)
+
+* Another fix (Neil Kistner in [#2](https://github.com/wyze/a-fixture/pull/2))
+
+## License
+
+MIT © [Neil Kistner](//neilkistner.com)
+
+"
+`;

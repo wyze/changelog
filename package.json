@@ -1,0 +1,73 @@
+{
+  "name": "@wyze/changelog",
+  "version": "0.0.0",
+  "description": "Write a change log.",
+  "license": "MIT",
+  "repository": "wyze/changelog",
+  "author": {
+    "name": "Neil Kistner",
+    "email": "neil.kistner@gmail.com",
+    "url": "neilkistner.com"
+  },
+  "bin": {
+    "changelog": "bin/index.js"
+  },
+  "scripts": {
+    "build": "rio -o bin/index.js -b '#!/usr/bin/env node' -e execa,github-username,read-pkg bin/src/index.ts",
+    "clean": "rimraf bin/index.js",
+    "postbuild": "shx chmod a+x bin/index.js",
+    "prebuild": "yarn clean",
+    "prettier": "prettier --write \"{bin,src}/**/*.ts\"",
+    "preversion": "yarn build",
+    "test": "jest",
+    "version": "node bin"
+  },
+  "files": [
+    "bin/index.js"
+  ],
+  "keywords": [
+    "generate",
+    "changelog"
+  ],
+  "dependencies": {
+    "execa": "^1.0.0",
+    "github-username": "^4.1.0",
+    "read-pkg": "^4.0.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/execa": "^0.9.0",
+    "@types/github-username": "^4.1.0",
+    "@types/jest": "^24.0.11",
+    "@types/node": "^11.11.0",
+    "@types/read-pkg": "^3.0.0",
+    "@wyze/rio": "^1.1.0",
+    "jest": "^24.3.1",
+    "prettier": "^1.14.2",
+    "rimraf": "^2.6.3",
+    "shx": "^0.3.2"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ],
+      "@babel/typescript"
+    ]
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  }
+}

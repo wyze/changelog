@@ -1,0 +1,14 @@
+# Dependencies
+node_modules
+
+# Build
+**/*.js
+
+# Logs
+*.log
+
+# Coverage
+coverage
+
+# macOS
+.*DS_Store
